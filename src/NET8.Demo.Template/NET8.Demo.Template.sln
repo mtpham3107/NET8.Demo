@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET8.Demo.Template.Core", "NET8.Demo.Template.Core\NET8.Demo.Template.Core.csproj", "{9BBB1427-F9B2-481D-B295-24BC6ECDB276}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET8.Demo.Template.Application", "NET8.Demo.Template.Application\NET8.Demo.Template.Application.csproj", "{8ACDA07D-016F-47A5-9D74-E5E120CBFA2D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET8.Demo.Template.Application.Contracts", "NET8.Demo.Template.Application.Contracts\NET8.Demo.Template.Application.Contracts.csproj", "{35DBBCCF-AF64-49FE-988A-A1FE387A53DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET8.Demo.Template.Domain", "NET8.Demo.Template.Domain\NET8.Demo.Template.Domain.csproj", "{68227922-93EC-45EE-B627-E411613C1A81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET8.Demo.Template.Domain.Shared", "NET8.Demo.Template.Domain.Shared\NET8.Demo.Template.Domain.Shared.csproj", "{15A8923A-1456-4B69-9AB3-A8424894E6F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET8.Demo.Template.WebApi", "NET8.Demo.Template.WebApi\NET8.Demo.Template.WebApi.csproj", "{2ADD192A-A147-4716-9718-4A08D8728336}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BBB1427-F9B2-481D-B295-24BC6ECDB276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BBB1427-F9B2-481D-B295-24BC6ECDB276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BBB1427-F9B2-481D-B295-24BC6ECDB276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BBB1427-F9B2-481D-B295-24BC6ECDB276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ACDA07D-016F-47A5-9D74-E5E120CBFA2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ACDA07D-016F-47A5-9D74-E5E120CBFA2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ACDA07D-016F-47A5-9D74-E5E120CBFA2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ACDA07D-016F-47A5-9D74-E5E120CBFA2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35DBBCCF-AF64-49FE-988A-A1FE387A53DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35DBBCCF-AF64-49FE-988A-A1FE387A53DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35DBBCCF-AF64-49FE-988A-A1FE387A53DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35DBBCCF-AF64-49FE-988A-A1FE387A53DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68227922-93EC-45EE-B627-E411613C1A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68227922-93EC-45EE-B627-E411613C1A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68227922-93EC-45EE-B627-E411613C1A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68227922-93EC-45EE-B627-E411613C1A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15A8923A-1456-4B69-9AB3-A8424894E6F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15A8923A-1456-4B69-9AB3-A8424894E6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15A8923A-1456-4B69-9AB3-A8424894E6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15A8923A-1456-4B69-9AB3-A8424894E6F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ADD192A-A147-4716-9718-4A08D8728336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ADD192A-A147-4716-9718-4A08D8728336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ADD192A-A147-4716-9718-4A08D8728336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ADD192A-A147-4716-9718-4A08D8728336}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BF3E131-712D-4F20-9306-E4E2FDF28EE3}
+	EndGlobalSection
+EndGlobal

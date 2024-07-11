@@ -1,0 +1,54 @@
+﻿@model NET8.Demo.Admin.Models.RegisterViewModel
+@{
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+    ViewBag.Title = "Đăng ký tài khoản";
+}
+<div class="container animated fadeInDown">
+    <div class="col-lg-5 col-md-6 col-sm-8 col-xs-10 center">
+        <form role="form" class="form-horizontal" method="post" action="@Url.Action("Register", "Account")">
+            <div class="ibox-content" style="border-radius: 10px; padding: 30px 60px 40px 60px">
+                <h2 class="text-center" style="padding: 10px"><strong>ĐĂNG KÝ TÀI KHOẢN</strong></h2>
+
+                <div class="form-group">
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary("", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control input-lg", @placeholder = "Họ" })
+                        </div>
+
+                        <div class="col-sm-6">
+                            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control input-lg", @placeholder = "Tên" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control input-lg", @placeholder = "Email" })
+                </div>
+
+                <div class="form-group">
+                    @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control input-lg", @type = "Number", @placeholder = "Số điện thoại" })
+                </div>
+
+                <div class="form-group">
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control input-lg", @placeholder = "Mật khẩu" })
+                </div>
+
+                <div class="form-group">
+                    @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control input-lg", @placeholder = "Xác nhận mật khẩu" })
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-success btn-block" type="submit" style="padding: 1rem 2.5rem;">Đăng ký</button>
+                    <div class="col-md-12 mt-2" style="text-align:center">
+                        @Html.ActionLink("Đăng nhập", "Login", "Account")
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

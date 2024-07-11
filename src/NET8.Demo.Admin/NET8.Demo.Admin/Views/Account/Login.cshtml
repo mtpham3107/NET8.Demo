@@ -1,0 +1,56 @@
+﻿@using NET8.Demo.Admin.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Đăng nhập";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<style> 
+    .input-group-addon {
+        font-size: 24px;
+        min-width: 46px;
+    }
+</style>
+<div class="container animated fadeInDown">
+    <div class="col-lg-5 col-md-6 col-sm-8 col-xs-10 center">
+        <form role="form" class="form-horizontal" method="post" action="@Url.Action("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl })">
+            <div class="ibox-content" style="border-radius: 10px; padding: 30px 60px 40px 60px">
+                <h2 class="text-center" style="padding: 10px"><strong>ĐĂNG NHẬP</strong></h2>
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <span class="fa fa-user-o"></span>
+                        </div>
+                        @Html.TextBoxFor(m => m.UserName, new { @class = "form-control input-lg", @placeholder = "Tài khoản" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <span class="fa fa-lock"></span>
+                        </div>
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control input-lg", @placeholder = "Mật khẩu", @aria_label = "Text input with dropdown button" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.CheckBoxFor(m => m.RememberMe)
+                    @Html.LabelFor(m => m.RememberMe)
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-success btn-block" type="submit" style="padding: 1rem 2.5rem;">Đăng nhập</button>
+
+                    <div class="col-md-12" style="padding: 0px">
+                        <div class="col-md-6" style="text-align:left; padding-left: 0px">
+                            @Html.ActionLink("Đăng ký tài khoản", "Register")
+                        </div>
+                        <div class="col-md-6" style="text-align:right; padding-right: 0px">
+                            @Html.ActionLink("Quên mật khẩu?", "ForgotPassword")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

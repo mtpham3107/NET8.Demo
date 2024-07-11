@@ -1,0 +1,6 @@
+@NET8.Demo.Template.WebApi_HostAddress = http://localhost:5249
+
+GET {{NET8.Demo.Template.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

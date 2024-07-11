@@ -1,0 +1,77 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title </title>
+     
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/> 
+    <link href="~/font-awesome/css/font-awesome.min.css" rel="stylesheet"/> 
+    <link href="~/css/style.css" rel="stylesheet">
+    <link href="~/css/animate.css" rel="stylesheet" />
+
+    <style>
+        .background-holder {
+            position: absolute;
+            width: 100%;
+            min-height: 100%;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            overflow: hidden;
+            will-change: transform,opacity,filter;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            background-repeat: no-repeat
+        }
+
+            .background-holder.overlay:before {
+                position: absolute;
+                content: '';
+                background: rgba(0,0,0,.4);
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 1
+            }
+
+        .middle-box {
+            max-width: 400px;
+        }
+
+        .container {
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".inner-link" data-offset="60">
+    <main>
+        <section>
+            <div class="background-holder overlay" style="background-image: url(../../images/background-login.jpg);"></div>
+            @RenderBody()
+        </section>
+    </main>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>

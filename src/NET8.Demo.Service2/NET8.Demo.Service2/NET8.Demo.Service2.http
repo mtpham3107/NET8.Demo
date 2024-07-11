@@ -1,0 +1,6 @@
+@NET8.Demo.Service2_HostAddress = http://localhost:5197
+
+GET {{NET8.Demo.Service2_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
